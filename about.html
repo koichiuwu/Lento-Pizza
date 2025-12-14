@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про нас - Lento Pizza</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="top-bar">
+            <div class="container top-bar__container">
+                <nav class="top-bar__nav">
+                    <a href="index.html" class="top-bar__link">Головна</a>
+                    <a href="about.html" class="top-bar__link active-link">Про нас</a>
+                    <a href="#" class="top-bar__link">Контакти</a>
+                    <a href="#" class="top-bar__link">Корпоративні замовлення</a>
+                    <a href="#" class="top-bar__link">Працюй у нас</a>
+                </nav>
+            </div>
+        </div>
+        <!-- Main Header -->
+         <div class="main-header">
+          <div class="container main-header__container">
+        
+        <!-- Логотип -->
+        <div class="logo-area">
+            <a href="index.html" class="logo">
+                <div class="logo__icon">
+                    <img src="img/logo.svg" alt="Lento Pizza Logo" class="custom-logo">
+                </div>
+                <span class="logo__text">Lento Pizza</span>
+            </a>
+            <div class="network-badge">
+                <span class="network-badge__title">Мережа №1 в Україні</span>
+                <span class="network-badge__subtitle">за якістю</span>
+            </div>
+        </div>
+                <!-- Кнопки входу -->
+                <div class="auth-buttons" id="auth-action-container">
+                  <!-- Початковий стан: кнопки входу -->
+                   <button class="btn btn--primary" id="open-auth-btn">Увійти</button>
+                   <button class="btn btn--secondary" id="open-register-btn">Реєстрація</button>
+                </div>
+                <!-- Кнопка Бургер -->
+    <button class="burger-btn" id="burger-btn">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+    </button>
+            </div>
+        </div>
+
+        <!-- 3. Навігація категорій -->
+        <div class="category-nav">
+            <div class="container category-nav__container">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#combo" class="nav-link">Комбо</a></li>
+                    <li class="nav-item"><a href="#pizza" class="nav-link">Піци</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Закуски</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Напої</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Десерти</a></li>
+                    <li class="nav-item">
+                        <button class="btn-other">
+                            Інше
+                            <svg width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M11.7633 0.160035C11.6967 0.102672 11.6193 0.0591786 11.5357 0.0321058C11.4521 0.00503293 11.364 -0.00507408 11.2764 0.00237738C11.1889 0.00982883 11.1037 0.034689 11.0259 0.0754994C10.9481 0.11631 10.8792 0.172249 10.8233 0.240035C9.25025 2.12804 6.99826 4.63204 6.00826 5.72504L1.16525 0.228035C1.10741 0.162159 1.03708 0.108408 0.958321 0.0698947C0.879566 0.0313808 0.793955 0.00886855 0.706441 0.00366054C0.618928 -0.00154746 0.531251 0.010652 0.448484 0.0395535C0.365717 0.068455 0.289504 0.113484 0.224255 0.172036C0.0918094 0.291168 0.011657 0.457703 0.00117419 0.635536C-0.00930859 0.813369 0.0507232 0.988167 0.168255 1.12204L5.34525 6.99804C5.45525 7.12304 5.57525 7.23204 5.73325 7.28904C5.90325 7.35004 6.08826 7.35104 6.25826 7.29304C6.41078 7.23394 6.54546 7.13646 6.64925 7.01004C7.32425 6.26904 10.0243 3.28904 11.8433 1.10804C11.957 0.971313 12.0123 0.795339 11.9974 0.618139C11.9824 0.440939 11.8983 0.275744 11.7633 0.160035Z" fill="white"/></svg>
+                        </button>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link">Акції</a></li>
+                </ul>
+                <button class="cart-btn">Кошик</button>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="section about-section">
+            <!-- Декоративний фон (Vector 4) -->
+            <div class="about-bg-blur"></div>
+            <!-- Лінивець на фоні (Image 5) -->
+            <img src="img/sloth-main.png" alt="Background Sloth" class="about-bg-sloth">
+
+            <div class="container about-container relative-z">
+                <!-- Текстовий блок -->
+                <div class="about-story-box">
+                    <p class="about-text">
+                        <strong>Чому Lento?</strong> В перекладі з італійської це означає «повільно». Дивно для доставки піци, правда?<br>
+                        Наша історія почалася з вечора перегляду мультфільму «Зоотрополіс». Нас надихнув персонаж Бліц — лінивець, який у звичайному житті нікуди не поспішає, але за кермом спорткара перетворюється на справжнього гонщика.
+                    </p>
+                    <p class="about-text">
+                        Ми зрозуміли, що це наша філософія:<br>
+                        <strong>На кухні ми «Lento»</strong> — Ми не поспішаємо, коли тісто має підійти. Ми повільно витримуємо соуси та ретельно обираємо кожен інгредієнт. Якість не терпить метушні.<br>
+                        <strong>На дорозі ми «Turbo»</strong> — Як тільки піца виходить з печі, вмикається режим Бліца. Наші кур'єри знають найкоротші шляхи Харкова, щоб доставити вам гарячу страву за 29 хвилин.
+                    </p>
+                    <p class="about-text">
+                        <strong>Lento Pizza — це коли смак дозріває повільно, а приїжджає швидко.</strong>
+                    </p>
+                </div>
+
+                <!-- Блок цінностей (Традиції, Швидкість, Свіжість) -->
+                <div class="values-grid">
+                    <!-- Колонка 1 -->
+                    <div class="value-card">
+                        <img src="img/rolling-pin.png" alt="Традиції" class="value-img rounded-img">
+                        <div class="value-content">
+                            <h3 class="value-title">Традиції</h3>
+                            <p class="value-desc">Витримка тіста 48 годин для ідеальної скоринки.</p>
+                        </div>
+                    </div>
+
+                    <!-- Колонка 2 -->
+                    <div class="value-card">
+                        <div class="value-content">
+                             <h3 class="value-title">Швидкість</h3>
+                            <p class="value-desc">Доставка до 60 хвилин або піца безкоштовно.</p>
+                        </div>
+                         <img src="img/stopwatch.png" alt="Швидкість" class="value-img rounded-img">
+                    </div>
+
+                    <!-- Колонка 3 -->
+                    <div class="value-card">
+                         <img src="img/heart-pizza.png" alt="Свіжість" class="value-img">
+                        <div class="value-content">
+                             <h3 class="value-title">Свіжість</h3>
+                             <p class="value-desc">Продукти від локальних фермерів щоранку.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<!-- Footer -->
+<footer id="contacts" class="site-footer">
+    <div class="container">
+        <!-- Верхня частина: Контакти та Додатки -->
+        <div class="footer-top">
+            <!-- Контакти -->
+            <div class="footer-contacts">
+                <h4 class="footer-heading">Контакти</h4>
+                <address class="footer-address">
+                    <p>Україна, м. Харків, вул. Сумська, 37</p>
+                    <p>+38 (099) 777-55-22</p>
+                    <a href="mailto:ordmig04@gmail.com" class="footer-email">ordmig04@gmail.com</a>
+                    <p>Щодня з 8:00 до 23:00</p>
+                </address>
+            </div>
+
+            <!-- Кнопки додатків -->
+            <div class="footer-apps">
+                <!-- Google Play Button Mockup -->
+                <a href="https://play.google.com/" class="app-btn" target="_blank">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.5,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" /></svg>
+                    <div class="app-btn-text">
+                        <span>GET IT ON</span>
+                        <span class="strong">Google Play</span>
+                    </div>
+                </a>
+                
+                <!-- App Store Button Mockup -->
+                <a href="https://apps.apple.com/" class="app-btn" target="_blank">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.37 12.36,4.26 13,3.5Z" /></svg>
+                    <div class="app-btn-text">
+                        <span>Download on the</span>
+                        <span class="strong">App Store</span>
+                    </div>
+                </a>
+
+                <!-- Huawei Mockup -->
+                <a href="https://appgallery.huawei.com/" class="app-btn" target="_blank">
+                     <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M12,2C6.47,2 2,6.47 2,12C2,17.53 6.47,22 12,22C17.53,22 22,17.53 22,12C22,6.47 17.53,2 12,2M10.05,16.21L6.71,12.87C6.32,12.48 6.32,11.85 6.71,11.46C7.1,11.07 7.73,11.07 8.12,11.46L10.05,13.39L15.88,7.56C16.27,7.17 16.9,7.17 17.29,7.56C17.68,7.95 17.68,8.58 17.29,8.97L10.05,16.21Z" /></svg>
+                    <div class="app-btn-text">
+                        <span>EXPLORE IT ON</span>
+                        <span class="strong">AppGallery</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Центральний напис -->
+        <div class="footer-center">
+            <h2 class="footer-big-title">1000 піцерій</h2>
+            <p class="footer-subtitle">По всій Україні</p>
+        </div>
+
+        <!-- Нижня смуга -->
+        <div class="footer-bottom">
+            <div class="footer-legal">
+                <span class="brand-name">Lento Pizza © 2025</span>
+                <a href="https://uk.wikipedia.org/wiki/%D0%9F%D1%80%D0%B0%D0%B2%D0%BE%D0%B2%D0%B0_%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D1%8F" class="legal-link" target="_blank">Правова інформація</a>
+            </div>
+
+            <div class="footer-socials">
+                <a href="https://www.facebook.com/" class="social-icon" target="_blank">
+                    <!-- Facebook Icon -->
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.15 5.96C15.21 5.96 16.12 6.04 16.12 6.04V8.51H15.01C13.77 8.51 13.38 9.28 13.38 10.07V12.06H16.15L15.71 14.96H13.38V21.96C18.16 21.21 21.82 17.06 21.82 12.06C21.82 6.53 17.32 2.04 12 2.04Z" /></svg>
+                </a>
+                <a href="https://www.instagram.com/" class="social-icon" target="_blank">
+                    <!-- Instagram Icon -->
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" /></svg>
+                </a>
+                <a href="https://www.youtube.com/" class="social-icon" target="_blank">
+                    <!-- Youtube Icon -->
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M10,15L15.19,12L10,9V15M21.56,7.17C21.69,7.64 21.78,8.27 21.84,9.07C21.91,9.87 21.94,10.66 21.94,11.44C21.94,12.22 21.91,13 21.84,13.81C21.77,14.61 21.69,15.24 21.56,15.71C21.28,16.71 20.57,17.41 19.54,17.68C18.33,18 11.94,18 11.94,18C11.94,18 5.56,18 4.34,17.68C3.33,17.41 2.61,16.71 2.33,15.71C2.19,15.24 2.11,14.61 2.05,13.81C1.97,13 1.94,12.22 1.94,11.44C1.94,10.66 1.97,9.87 2.05,9.07C2.11,8.27 2.19,7.64 2.33,7.17C2.61,6.17 3.33,5.47 4.34,5.2C5.56,4.89 11.94,4.89 11.94,4.89C11.94,4.89 18.33,4.89 19.54,5.2C20.57,5.47 21.28,6.17 21.56,7.17Z" /></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- МОДАЛЬНЕ ВІКНО АВТОРИЗАЦІЇ -->
+<div id="auth-modal" class="modal-overlay">
+    <div class="modal-window auth-window">
+        <!-- Кнопка закриття -->
+        <button class="modal-close-btn" id="close-auth">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#181818" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6L18 18"/></svg>
+        </button>
+
+        <!-- КРОК 1: Вхід / Реєстрація -->
+        <div class="auth-step active" id="auth-step-1">
+            <h2 class="auth-title">Увійдіть або створіть обліковий запис</h2>
+            
+            <div class="social-login">
+                <button class="social-btn">
+                    <!-- Google Icon SVG -->
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.766 12.2764C23.766 11.4607 23.6999 10.6406 23.5588 9.83807H12.24V14.4591H18.7217C18.4528 15.9494 17.5885 17.2678 16.323 18.1056V21.1039H20.19C22.4608 19.0139 23.766 15.9274 23.766 12.2764Z" fill="#4285F4"/><path d="M12.24 24.0008C15.4766 24.0008 18.2058 22.9382 20.19 21.1039L16.323 18.1056C15.251 18.8108 13.8668 19.252 12.24 19.252C9.11388 19.252 6.45946 17.1399 5.50705 14.3003H1.5166V17.3912C3.55371 21.4434 7.7029 24.0008 12.24 24.0008Z" fill="#34A853"/><path d="M5.50705 14.3003C5.00636 12.8099 5.00636 11.1961 5.50705 9.70575V6.61481H1.5166C-0.18551 10.0056 -0.18551 14.0004 1.5166 17.3912L5.50705 14.3003Z" fill="#FBBC05"/><path d="M12.24 4.74966C13.9509 4.7232 15.6044 5.36697 16.8434 6.54867L20.2695 3.12262C18.1001 1.0855 15.2208 -0.034466 12.24 0.000539111C7.7029 0.000539111 3.55371 2.55797 1.5166 6.61481L5.50705 9.70575C6.45064 6.86173 9.10947 4.74966 12.24 4.74966Z" fill="#EA4335"/></svg>
+                    Продовжити з Google
+                </button>
+                <button class="social-btn">
+                    <!-- Facebook Icon SVG -->
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#1877F2" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.073C24 5.405 18.627 0 12 0C5.373 0 0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24V15.563H7.078V12.073H10.125V9.429C10.125 6.422 11.917 4.761 14.658 4.761C15.97 4.761 17.344 4.996 17.344 4.996V7.948H15.83C14.34 7.948 13.875 8.873 13.875 9.822V12.073H17.203L16.67 15.563H13.875V24C19.612 23.094 24 18.1 24 12.073Z" fill="white"/><path d="M16.671 15.563L17.204 12.073H13.876V9.82205C13.876 8.87305 14.341 7.94805 15.831 7.94805H17.345V4.99605C17.345 4.99605 15.971 4.76105 14.659 4.76105C11.918 4.76105 10.126 6.42205 10.126 9.42905V12.073H7.0791V15.563H10.126V24C10.74 24.101 11.365 24.152 12.001 24.152C12.637 24.152 13.262 24.101 13.876 24V15.563H16.671Z" fill="#1877F2"/></svg>
+                    Продовжити через Facebook
+                </button>
+            </div>
+
+            <div class="auth-divider">
+                <span>або</span>
+            </div>
+
+            <form class="auth-form" onsubmit="return false;">
+                <!-- Електронна пошта -->
+                <div class="input-group">
+                    <label>Продовжити за адресою електронної пошти</label>
+                    <div class="custom-input-wrapper">
+                        <input type="email" placeholder="Продовжити введення адреси електронної пошти" class="custom-input" id="auth-email">
+                    </div>
+                </div>
+
+                <!-- Телефон -->
+                <div class="input-group">
+                    <label>Продовжити за номером телефону</label>
+                    <div class="custom-input-wrapper">
+                        <input type="tel" placeholder="Введіть номер телефону" class="custom-input" id="auth-phone">
+                    </div>
+                </div>
+
+                <button class="btn-green-large" id="btn-get-code">Отримати код підтвердження</button>
+            </form>
+        </div>
+
+        <!-- КРОК 2: Введення коду -->
+        <div class="auth-step" id="auth-step-2">
+            <h2 class="auth-title">Введіть код підтвердження</h2>
+            
+            <div class="auth-info-box">
+                <div class="info-icon-green">i</div>
+                <div class="info-content">
+                    <strong>Код підтвердження надіслано</strong>
+                    <p>Ми надіслали код підтвердження на адресу <span class="bold">example@gmail.com</span>.</p>
+                    <p class="small-text">Він дійсний протягом 10 хвилин. Якщо ви його не знайдете, перевірте папку зі спамом.</p>
+                </div>
+            </div>
+
+            <form class="auth-form" onsubmit="return false;">
+                 <div class="input-group">
+                    <label>Введіть код підтвердження</label>
+                    <div class="custom-input-wrapper">
+                        <input type="text" placeholder="Введіть код підтвердження" class="custom-input text-center" id="auth-code">
+                    </div>
+                </div>
+
+                <div class="auth-buttons-row">
+                    <button class="btn-grey-round" id="btn-auth-back">Повернутися назад</button>
+                    <button class="btn-green-round" id="btn-verify-code">Далі</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- КРОК 3: Успіх -->
+        <div class="auth-step" id="auth-step-3">
+             <div class="success-content">
+                 <h2 class="auth-title text-green">Вітаємо! Ви в системі</h2>
+                 <img src="img/sloth2-main.png" alt="Success Sloth" class="success-img">
+                 
+                 <button class="btn-green-large" id="btn-finish-auth">Перейти до меню</button>
+             </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- МОБІЛЬНЕ БІЧНЕ МЕНЮ -->
+<div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+<div class="mobile-menu-sidebar" id="mobile-menu-sidebar">
+    <div class="mobile-menu-header">
+        <span class="mobile-menu-title">Меню</span>
+        <button class="mobile-menu-close" id="close-mobile-menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#181818" stroke-width="2"><path d="M18 6L6 18M6 6L18 18"/></svg>
+        </button>
+    </div>
+    <nav class="mobile-menu-nav">
+        <a href="index.html" class="mobile-menu-link">Головна</a>
+        <a href="about.html" class="mobile-menu-link">Про нас</a>
+        <a href="#contacts" class="mobile-menu-link">Контакти</a>
+        <a href="#" class="mobile-menu-link">Акції</a>
+        <a href="#" class="mobile-menu-link">Доставка та оплата</a>
+        <a href="#" class="mobile-menu-link">Корпоративні замовлення</a>
+    </nav>
+    <div class="mobile-menu-footer">
+        <a href="tel:+380997775522" class="mobile-menu-phone">+38 (099) 777-55-22</a>
+        <p>Щодня з 8:00 до 23:00</p>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
